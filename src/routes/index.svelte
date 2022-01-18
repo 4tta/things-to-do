@@ -15,9 +15,20 @@
     }
 </script>
 
-<p>Activity: {activity}</p>
-<p>Type: {type}</p>
-<p>Participants: {participants}</p>
+
+
+<div class="p-3">
+    <h1>Thing To Do</h1>
+
+    <p>Activity: {activity}</p>
+    <p>Type: {type}</p>
+    <p>Participants: {participants}</p>
+
+    <form on:submit|preventDefault={getInfo}>
+        <button type="submit" class="btn btn-success">Check</button>
+    </form>
+</div>
+
 
 
 
